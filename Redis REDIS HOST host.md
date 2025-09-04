@@ -1,0 +1,72 @@
+# ===== Redis =====
+REDIS_HOST=host.docker.internal
+REDIS_PORT=6379
+REDIS_DB=0
+REDIS_PASSWORD=
+
+# ===== Elasticsearch / ELK =====
+ELASTICSEARCH_HOST=http://elasticsearch:9200
+ELASTICSEARCH_INDEX=meezanlens
+ENABLE_ELK_LOGGING=true
+ENABLE_DETAILED_LOGGING=false
+
+# ===== MinIO (two endpoints) =====
+MINIO_REGION=us-east-1
+MINIO_BUCKET_NAME=your-bucket
+
+# Laptop MinIO
+MINIO_LAPTOP_ENDPOINT=http://minio:9000
+MINIO_LAPTOP_ACCESS_KEY=minioadmin
+MINIO_LAPTOP_SECRET_KEY=minioadmin
+
+# System MinIO
+MINIO_SYSTEM_ENDPOINT=http://minio:9000
+MINIO_SYSTEM_ACCESS_KEY=minioadmin
+MINIO_SYSTEM_SECRET_KEY=minioadmin
+
+REDIS_HOST=host.docker.internal
+ELASTICSEARCH_HOST=http://elasticsearch:9200
+NUM_GPUS=1
+RAY_ADDRESS=6380
+RAY_NUM_REPLICAS=1
+LANGFUSE_SECRET_KEY=sk-lf-6b574fc3-03e8-402c-a010-78439a81d196
+LANGFUSE_PUBLIC_KEY=pk-lf-b178c2f8-dd1a-4492-bc71-6be058ff49ec
+LANGFUSE_HOST=https://cloud.langfuse.com
+# MinIO connection settings
+MINIO_SYSTEM_ENDPOINT=http://minio:9000
+MINIO_SYSTEM_ACCESS_KEY=minioadmin
+MINIO_SYSTEM_SECRET_KEY=minioadmin
+MINIO_REGION=us-east-1
+MINIO_BUCKET_NAME=meezanlens
+RAY_OPENAI_API_KEY=your-secret-token
+
+# API Configuration
+API_HOST=0.0.0.0
+API_PORT=8000
+
+# Gradio Configuration
+GRADIO_HOST=0.0.0.0
+GRADIO_PORT=8001
+
+# Logging
+LOG_LEVEL=INFO
+# ===== Optional: existing keys already in use elsewhere =====
+# MONGO_URI=
+# MONGO_DB_NAME=
+# MONGO_COLLECTION_NAME=
+# POSTGRES_USER=
+# POSTGRES_PASSWORD=
+# POSTGRES_DB=
+# POSTGRES_HOST=
+# POSTGRES_PORT=5432
+# AWS_ACCESS_KEY_ID=
+# AWS_SECRET_ACCESS_KEY=
+# AWS_REGION=us-east-1
+# AWS_BUCKET_NAME=
+# AWS_FOLDER_NAME=
+# HELICONE_API_KEY=
+# LANGFUSE_SECRET_KEY=
+# LANGFUSE_PUBLIC_KEY=
+# LANGFUSE_HOST=
+
+
